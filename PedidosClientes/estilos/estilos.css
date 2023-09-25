@@ -1,0 +1,167 @@
+
+h5{
+    text-align: center;
+}
+
+/************************************************************************************************************************************/
+/****************************************** ESTILOS DEL NAVGADOR DE LA WEB **********************************************************/
+/************************************************************************************************************************************/
+        
+        .header{
+           
+            position: fixed;
+            width: 100%;
+            z-index: 3;
+            background-color: #ffff;
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.07);
+
+        }
+        .header img{
+            display: block;
+            margin: auto;
+           
+        }
+        .navegador ul li {
+            margin-left: 30%;
+            text-align: center;
+            width: 100%;
+            font-size: large;
+           
+        }
+
+        .navegador ul li a:hover{
+            
+            text-decoration: underline;
+            transform: scale(1.08);
+              
+        }
+
+    /* Parte desplegable del menú */
+
+        .dropdown{
+            display: inline-block;
+            text-align: left;
+            
+            
+        }
+        .dropdown-content{
+            display: none;
+            font-size: large;
+            position: absolute;
+            overflow: auto;
+            width: 170%;
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+            background-color: #ffff;
+        }
+
+
+    /* De esta forma haremos quue el menú se despliegue de forma vertical según se posicione el ratón sobre productos*/
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+            position: absolute;
+        }
+
+        .dropdown-content a:hover{
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.08);
+            font-weight: bold;
+            
+        }
+
+                
+
+
+
+/************************************************************************************************************************************/
+/****************************************** ESTILOS DEL CONTENEDOR DE LA WEB ********************************************************/
+/************************************************************************************************************************************/
+       
+    /*Indexamos el contenedor principal de la web detás de nuestro navegador para que de esta manera este se sobreponga a nuestros contenidos*/
+        .container{
+            position: relative;
+            z-index: 1;
+        }
+
+    /* Estilos delos cuadros descriptivos de nuestras pantallas de la web */
+        
+        .jumbotron{
+            background-color: #d6d6d6;
+            height: 170px;
+        }
+        .jumbotron h4{
+            text-align: center;
+        }
+        .jumbotron1{
+            background-color: #F5F5F5;  
+        }
+
+        .contenedor{
+            margin-top:5% ;
+            margin-bottom: 2%;
+        }
+
+    
+        .contenedor .card{
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+        }  
+
+        .contenedor .card:hover{
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.6);
+            transform: scale(1.045);
+            transition: 0.25s;
+        }   
+
+        .contenedor h4{
+            text-align: center;
+        }
+        .contenedor .card button{
+            align-items: center;
+        }
+
+        .card-body button{
+            align-items: center;
+            margin-left: 10%;
+        }
+
+        th{
+            text-align: center;
+        }
+        
+/************************************************************************************************************************************/
+/*************************************** ESTILOS DEL CONTROL DE CLIENTES ************************************************************/
+/************************************************************************************************************************************/
+.formulario{
+    position: relative;
+
+}    
+
+
+.mensaje {
+    
+    position: fixed;
+    z-index: 4;
+}
+
+
+.mensaje button{
+    opacity: 1.5;
+}
+
+
+/************************************************************************************************************************************/
+/************************************************** SECCION DE NOTICIAS ************************************************************/
+/************************************************************************************************************************************/
+
+
+.descripcion{
+    height: 180px;
+    overflow: hidden;
+    transition: .3s ease-in .3s;    
+    
+    
+}
+
+ .descripcion:hover{
+    height: 100%;
+    
+}
